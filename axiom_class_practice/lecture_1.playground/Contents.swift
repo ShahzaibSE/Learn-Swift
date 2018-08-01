@@ -22,3 +22,17 @@ if number1 > number2 {
 } else if (number2 > number1) {
     print("Number #1 is not greater than Number #2");
 }
+
+// Some Arthematic operators.
+number1 += 3;
+number2 += 1;
+print("Number #1 is \(number1)");
+print("Number #2 is \(number2)");
+
+// -- Logical Operations -- //
+if number1 == number2 {
+    print ("Number 1 is equal to number 2");
+} else {
+    print("Number 1 is not equal to number 2");
+}
+
