@@ -29,7 +29,11 @@ print("Total number of friends: \(friendList.count)");
 // Splitted Array.
 friendList.split(separator: "Jameel");
 print("Splited list of friends \(friendList)");
+// -- Checking if an element exist  -- //
+print("Searched Item: \(friendList.contains("Zain"))");
 // ------------------//
 // A fixed size array.
 var pagesList = Array<Any>();
-//pagesList.capacity()
+pagesList = [1,2,3,4,5,6,7,8,9];
+print("Fixed size array of 10: \(pagesList)");
+print("Capacity of the list: \(pagesList.capacity)")
