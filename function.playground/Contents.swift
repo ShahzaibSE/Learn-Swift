@@ -27,3 +27,20 @@ func divisonDescriptionFor(to numerator: Double, to denomenator: Double) {
 }
 
 divisonDescriptionFor(to:5.0, to: 4.0);
+
+var student: Dictionary<String,String> = ["Firstname" : "Shahzaib"]
+// Creating a student
+student["Lastname"] = "Noor"
+student["age"] = String(23)
+student["city"] = "Jeddah"
+student["country"] = "Saudia Arabia"
+
+func checkStudent(s_record student:Dictionary<String,String>) { // name preposition implemented.
+    for (key, value) in student {
+        print("\(key) : \(value)")
+    }
+}
+
+checkStudent(s_record: student)
+
+

@@ -29,3 +29,8 @@ print("Multiplication: \(multiplication_result)")
 let divison_result: Double = calculator(first_val:2, second_val:45,operation: "/") // Divison
 print("Divison: \(divison_result)")
 
+func printGreeting(his name: String) {  // Here our naming preposition is 'his'
+    print("Greeting \(name)");
+}
+
+printGreeting(his: "Shahzaib")
