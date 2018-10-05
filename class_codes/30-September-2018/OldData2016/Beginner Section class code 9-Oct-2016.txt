@@ -1,0 +1,112 @@
+//: Playground - noun: a place where people can play
+
+
+var str = "Hello, playground"
+struct Team {
+    var teamName:String
+    var group:String
+}
+
+struct student{
+    let rollNo:Int
+    var name:String
+    var team:Team
+}
+
+
+var aliTeam = Team(teamName: "ABC", group: "123")
+var ali = student(rollNo: 123, name: "ali", team: aliTeam)
+
+
+struct robot {
+    var name:String
+    var image:String
+    var myBadge:badge
+    
+}
+struct badge{
+    var badgeName:String
+    var badgeColor:String
+}
+
+var goldBadge = badge(badgeName: "goldBadge", badgeColor: "green")
+
+var myRobot = robot(name: "myRobot", image: "image", myBadge: goldBadge)
+
+myRobot.myBadge.badgeName="silverBadge"
+
+
+var priceWithTax = true
+var priceWithOutTax = false
+
+var isItemTaxFree = true
+
+var value = isItemTaxFree ? priceWithTax:priceWithOutTax
+
+
+//Lesson 2
+
+
+func add(firstValue x:Int,firstValue y:Int)->Int{
+    return x+y
+}
+
+
+add(firstValue: 12, firstValue: 12)
+
+func multiply(_ x:Int,_ y:Int)->Int{
+    return x*y
+}
+
+multiply(10, 10)
+
+
+//student object contains team
+var nomanTeam = Team(teamName: "ABC", group: "123")
+var noman = student(rollNo: 123, name: "noman", team: nomanTeam)
+
+
+
+
+func helloToStudent(x:student){
+    print("hello \(x.name) \(x.rollNo) \(x.team.teamName)")
+}
+
+
+helloToStudent(x: noman)
+
+
+
+func numbers(_ array:[Int]) {
+    
+    for item in array{
+        print(item)
+    }
+}
+
+
+
+numbers([1,2,3,4,5])
+
+
+
+func getArray()->[student]{
+    
+    var array = [student]()
+    array.append(noman)
+    array.append(ali)
+    
+    return array
+    
+}
+
+for stu in getArray(){
+    print(stu.name)
+}
+
+multiply(add(firstValue: 10, firstValue: 10)
+, 20)
+
+
+
+

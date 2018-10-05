@@ -1,0 +1,33 @@
+//: Playground - noun: a place where people can play
+
+
+var str = "Hello, playground"
+func add(a:Int , b:Int)->Int {
+    
+    return a+b
+}
+
+let sum = add(a: 10, b: 10)
+print(sum)
+
+
+func hello(){
+    print("hello")
+}
+
+hello()
+
+
+
+func againhello(greeting:String){
+    print(greeting)
+    
+}
+
+
+againhello(greeting: "again hello")
+
+
+
+
+

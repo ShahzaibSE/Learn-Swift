@@ -1,0 +1,85 @@
+//  Write some awesome Swift code, or import libraries like "Foundation",
+//  "Dispatch", or "Glibc"
+
+print("Hello world!")
+
+
+var isRaining = true
+var isWeekend = false 
+var isClass = true
+
+if isRaining && isWeekend {
+    print("true here")
+
+    
+}else if isClass {
+
+    print("here is false")
+
+    
+}else{
+
+    print("Nothing!")
+}
+
+var array = [1,2,3,4]
+array.append(3)
+
+
+var myAnotherArray = array
+myAnotherArray.append(10)
+myAnotherArray[0] = 500
+
+
+let MyConstant = 10
+print(MyConstant+10)
+print(MyConstant)
+
+
+
+var emptyArr:[Int] = [1]
+emptyArr = [1,2,3,4,5,6]
+
+print(emptyArr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

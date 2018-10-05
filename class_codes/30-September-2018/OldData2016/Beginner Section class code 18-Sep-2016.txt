@@ -1,0 +1,39 @@
+
+
+func sayHello(name:String)->String{
+    return "hello \(name)!"
+}
+
+func sayHelloAgain(name:String)->String{
+    return "hello \(name) again!"
+}
+
+func sayHello(name:String,isGreeted:Bool)->String{
+    
+    if isGreeted {
+        return sayHelloAgain(name:name)
+    }else{
+    
+        return sayHello(name:name)
+
+    }
+    
+}
+
+print(sayHello(name:"ali",isGreeted:false))
+
+
+func minMax(array: [Int]) -> (min: Int, max: Int) {
+    var currentMin = array[0]
+    var currentMax = array[0]
+    for value in array[1..<array.count] {
+        if value < currentMin {
+            currentMin = value
+        } else if value > currentMax {
+            currentMax = value
+        }
+    }
+    return (currentMin, currentMax)
+}
+
+print(minMax(array:[1,2,3,4,5]))

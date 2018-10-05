@@ -1,0 +1,151 @@
+//  Write some awesome Swift code, or import libraries like "Foundation",
+//  "Dispatch", or "Glibc"
+
+print("Hello world!")
+//  Write some awesome Swift code, or import libraries like "Foundation",
+//  "Dispatch", or "Glibc"
+
+print("Hello world!")
+
+var myVaraible = 10.5
+var myAnotherVariable:Int = 20
+
+
+var myNo = 88
+
+var myMessage:String = ""
+
+var myAotherStrin = "Another string! 234234 +0-0-23423"
+
+var myDouble:Double = 5.5
+var myAnotherDouble = 9.5
+
+var myFloat:Float = 88.8888
+
+
+var myChar:Character = "a"
+
+
+var myBool = true
+var myAnotherBool:Bool = false
+
+var value:String
+
+
+value = "value changed";
+
+
+var intValue:Int
+intValue = 33
+
+var VALUE = 99
+
+intValue = VALUE
+
+
+
+
+let myConstantValue = "asdasd  99.88 + 10"
+let myAnotherConstant:Double = 88.90
+
+/* this use for testing
+swift */
+
+var newValuewithVariable = 1012321
+let newValue = newValuewithVariable
+print(newValue)
+
+
+var score:Int
+// score = 0
+
+var gameValue:Int = 10
+var bonus:Int = 3
+
+score = gameValue + bonus
+print("score before increament = \(score)")
+
+var increment = 10
+// score = score - increment
+score -= increment
+print("score after increament = \(score)")
+
+
+//This code for comparison
+// ==, ,<, >, <= , >= ,!=
+
+var winCondition = 10
+var result = score != winCondition // 3 != 10
+
+var anotherResult = false || true
+
+/*
+this follows the addition
+
+true || true = true
+true || false = true
+false || true = true
+false || false = false
+*/
+
+
+var andOperator = false && false
+
+/*
+this follows the multiplication
+true && true = true
+false && true = false
+true && false = false
+false && false = false
+
+*/
+
+print(andOperator)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

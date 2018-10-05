@@ -1,0 +1,162 @@
+//: Playground - noun: a place where people can play
+
+import UIKit
+import Foundation
+
+var str = "Hello, playground"
+
+var months = "abcd"
+
+if months == "jan"{
+    print(months)
+}else if months == "feb"{
+    print(months)
+}else if months == "march"{
+    print(months)
+}
+
+//simple switch
+switch months {
+case "jan":
+    print("jan")
+case "jan":
+    print("feb")
+case "march":
+    print("march")
+case "april":
+    print("april")
+case "may":
+    print("may")
+case "june":
+    print("june")
+case "jully":
+    print("jully")
+case "aug":
+    print("aug")
+case "sep":
+    print("sep")
+case "oct":
+    print("oct")
+case "nov":
+    print("nov")
+case "dec":
+    print("dec")
+default:
+    print("this is not a month")
+}
+
+//switch with multiple values
+switch months {
+case "dec" , "jan" , "feb":
+    print("winter")
+case "mar" , "april" , "may":
+    print("spring")
+case "june" , "jully" , "aug":
+    print("summer")
+case "sep" , "oct" , "nov":
+    print("Autum")
+default:
+    print("this is not a season")
+}
+months = "feb"
+
+
+
+if months == "jan" || months == "dec" || months == "feb" {
+    print("winter")
+
+}else if months == "march" || months == "april" || months == "may" {
+    print("spring")
+
+}
+
+
+
+
+// switch with range operator
+var karachiWeather = 21
+switch karachiWeather {
+case 0...10:
+    print("Cold")
+    
+case 11...20:
+    print("Normal")
+    
+case 21...30:
+    print("Warm")
+default:
+    print("this is not in range")
+}
+
+// fallthrough keyword
+var intValue = 100
+
+switch intValue {
+case 1...100:
+    print("this is between 1...100")
+    fallthrough
+    
+default:
+    print("this default")
+    break
+}
+
+
+//ternary operator
+var food = "biryani"
+var drink = "Coke"
+
+var isFood = false
+
+// boolValue ? first : sencond
+var message = isFood ? food:drink
+
+var valueOfFood = ""
+if isFood == false {
+    valueOfFood = food
+}else{
+    valueOfFood = drink
+}
+valueOfFood
+
+
+//Project 3 
+
+
+var name :String = ""
+var age = ""
+var marks = String()
+
+var description = "This is description of macbook"
+ var charValue = description.characters
+
+for char in charValue {
+    print(char)
+}
+
+description.characters.count
+
+description.replacingOccurrences(of: "This", with: "🐳")
+description.capitalized
+
+
+
+var language = "\u{95}"
+
+var sumOFStr = "abcd" + " \(88.9) " + "efg"
+
+
+for _ in 1...10{
+    print("hello")
+}
+
+var sum = 0
+
+while sum < 9 {
+    sum+=1
+    if sum == 4 {
+        continue
+    }
+
+}
+

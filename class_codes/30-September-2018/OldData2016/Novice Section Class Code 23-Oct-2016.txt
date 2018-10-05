@@ -1,0 +1,176 @@
+//: Playground - noun: a place where people can play
+
+
+3+5 //infix operator +,-,*,/,%
+
+var count = 0 //postfix operator
+ //count++
+
+
+var isRaining = false
+!isRaining //prefix operator
+
+
+
+var food = "biryani"
+var drink = "Dew"
+
+var message = ""
+
+//if isFood {
+//    print(food)
+//    message = food
+//}else{
+//    print(drink)
+//    message = drink
+//}
+
+//alternate way  ternary operator
+var isFood = true
+var isdesert = false
+
+
+message = (isFood || isdesert)  ? food : drink
+
+print(message)
+
+//remainder
+13%5
+
+
+
+var value = 2
+
+//value = value * 12
+value*=12
+
+struct RobotWeapon{
+    var weaponName:String
+    var lisenceNo:Int
+}
+
+struct Robot {
+    var name:String
+    var color:String
+    var weapon:[RobotWeapon]
+}
+
+
+
+//var AIRobot:Robot = Robot(name: "AI", color: "red",)
+//AIRobot.color = "green"
+//
+//var robotColor:String = AIRobot.color
+//
+//var str:String  = "name"
+//var object:Robot = Robot(name: "AI", color: "red")
+//
+
+
+var w = RobotWeapon(weaponName: "9mm", lisenceNo: 123)
+
+var flyingRobot = Robot(name: "flying", color: "brwon", weapon: [w])
+
+var RWeapon = flyingRobot.weapon[0]
+
+
+
+// a and b are parameters
+func multiply(a:Int , b:Int) ->Int{
+    return a*b
+}
+
+// 10 and 20 are arguments
+var multi = multiply(a: 10, b: 20)
+
+//struct object as a argument
+func helloRobot(robot:Robot){
+    print("hello \(robot.name)")
+//    var RobotName = robot.name
+}
+helloRobot(robot: flyingRobot)
+
+
+
+//default parameter
+func increment(i:Double=8)->Double{
+    var inc = i + 10
+    return inc
+}
+
+increment()
+
+
+
+struct House {
+    let noRoom:Int
+    let kitchecn:Int
+}
+
+
+func doubleHouse(h:House) ->House {
+    
+    let doublehouse = House(noRoom: h.noRoom * 10, kitchecn: h.kitchecn * 10)
+    
+    return doublehouse
+}
+
+let myHouse = House(noRoom: 5, kitchecn: 1)
+let dHouse  = doubleHouse(h: myHouse)
+dHouse.noRoom
+
+
+
+func maxMin (number:[Int]) -> (Int,Int,String) {
+    
+    return (0,10,"these are min and max avlues")
+}
+
+let minMAxValue = maxMin(number: [1,2,3])
+
+minMAxValue.1
+
+
+
+//value pass by refrence
+func hello(stuName: inout String){
+    stuName = "hello \(stuName)"
+}
+var studentName = "noman"
+hello(stuName: &studentName)
+
+studentName
+
+
+
+
+func mathFunction() ->Int{ //scope
+    
+    func ADD(a:Int,b:Int)->Int{ //scop
+        print(a+b)
+        return a+b
+    }
+    
+    func MULTI(i:Int, j:Int){ //scope
+        print(i*j)
+    }
+    
+   return ADD(a:9,b:6)
+   
+    MULTI(i:9,j:6)
+}
+
+
+mathFunction()
+
+
+
+
+
+
+
+
+
+
+
+

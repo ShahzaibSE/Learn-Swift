@@ -1,0 +1,52 @@
+//: Playground - noun: a place where people can play
+
+
+var str = "Hello, playground"
+
+func sayhello(){
+    print("hello world")
+}
+sayhello()
+
+func add(a:Int, b:Int){
+    print("addition=\(a+b)")
+}
+add(a: 2, b: 2)
+
+
+func addWithReturn(a:Int,b:Int)->Int{
+    return a+b
+}
+
+let addedValue = addWithReturn(a: 10, b: 20)
+
+//struct of student
+struct Student {
+    
+    var name:String
+    var age:Int
+    var school:String
+}
+
+
+var value:Int = 0
+
+var ali:Student = Student(name: "ali", age: 20, school: "abc")
+print(ali.school)
+
+struct Location {
+    let x:Int = 100
+    let y:Int = 100
+}
+
+var sirSyedUni = Location()
+var ageOfALi = ali.age
+
+//func Student(name:String , age:Int , school:String){
+//    
+//}
+
+
+
+
+

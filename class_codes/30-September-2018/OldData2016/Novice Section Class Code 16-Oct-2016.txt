@@ -1,0 +1,90 @@
+//: Playground - noun: a place where people can play
+
+
+var str = "Hello, playground"
+
+
+struct Maze {
+    var blocks : Int
+    var mazeColor:String
+    var size:Int
+}
+
+struct Robot {
+    var name:String
+    var color:String
+    var size:Int
+}
+
+//var myMaze:Int = 0
+var myMaze:Maze = Maze(blocks: 10, mazeColor: "orange",size:100)
+print(myMaze.blocks)
+print(myMaze.mazeColor)
+print(myMaze.size)
+
+var Size:Int = myMaze.size
+print(Size)
+
+
+var Color:String = myMaze.mazeColor
+print(Color)
+
+//changing maze color
+myMaze.mazeColor = "red"
+
+
+
+var flyingRobot:Robot = Robot(name: "flyingRobot", color: "green", size: 20)
+
+
+flyingRobot.size = myMaze.size
+//changing maze size
+myMaze.size = 200
+
+//assig maze size into robot size
+flyingRobot.size = myMaze.size
+
+print(flyingRobot.size)
+print(flyingRobot.color)
+
+struct Student {
+    
+    var marks:Int
+    var name:String
+    var rollNo:Int
+}
+
+struct Class {
+    
+    var size :Int
+    var name:String
+    var floor:Int
+    var classStudent = [Student]()
+    
+}
+
+
+var ali = Student(marks: 68, name: "ali", rollNo: 123)
+var noman = Student(marks: 99, name: "noman", rollNo: 456)
+
+var stuArr = [ali,noman]
+
+var noviceClass = Class(size: 100, name: "F-Block", floor: 1, classStudent: stuArr)
+
+noviceClass.classStudent.remove(at: 0)
+print(noviceClass.classStudent[0].name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

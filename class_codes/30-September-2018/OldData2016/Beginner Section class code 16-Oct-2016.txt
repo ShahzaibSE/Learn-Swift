@@ -1,0 +1,220 @@
+//: Playground - noun: a place where people can play
+
+
+var str = "Hello, playground"
+
+var month:Int = 11
+
+switch month {
+case 1:
+    print("jan")
+case 2:
+    print("feb")
+case 3:
+    print("march")
+case 4:
+    print("april")
+case 5:
+    print("may")
+case 6:
+    print("june")
+case 7:
+    print("july")
+case 8:
+    print("aug")
+case 9:
+    print("sep")
+case 10:
+    print("oct")
+case 11:
+    print("nov")
+case 12:
+    print("dec")
+    
+default:
+    print("this is not a month")
+}
+
+
+var alphabet = "a"
+
+if alphabet == "a" || alphabet == "e" || alphabet == "i" || alphabet == "o" || alphabet == "u"{
+
+    print("this is  a vowel")
+
+}else{
+    print("this is not a vowel")
+}
+
+
+switch  alphabet {
+case "a","e","i","o","u":
+    print("this is  a vowel")
+
+default:
+    print("this is not a vowel")
+
+}
+
+
+var number  = 100
+
+//
+//switch number {
+//case 0...100:
+//    print("this number is between 0 and 100")
+//default:
+//    print("this number greater than 100")
+//
+//}
+
+switch number {
+case 0...100:
+    print("this number is between 0 and 100")
+    fallthrough
+
+case 101...200:
+    print("this number is between 101 and 200")
+    fallthrough
+
+default:
+    print("and this is also integer")
+    
+}
+
+struct Student{
+    var name:String
+    var marks:Int
+}
+
+var ali = Student(name: "ali", marks: 80)
+
+var marks:Int = ali.marks
+
+switch marks {
+case 80...99:
+    print("A+")
+default:
+    print("Failed")
+}
+
+
+//Lesson 3
+//Strings
+
+
+var greeting = "hello"
+var arrOfChar = greeting.characters
+
+//for i in arrOfChar {
+//    print(i)
+//}
+
+var reversed = greeting.characters.reversed()
+for j in reversed {
+    print(j)
+}
+
+greeting.contains("hell")
+greeting.characters.count
+greeting.replacingOccurrences(of: "h", with: "HHHH")
+var myChar = "\u{33B9}"
+
+var message  =  "hello \(1000)"
+
+
+for char in message.characters {
+    print(char)
+}
+
+var numbers = [43,565,878]
+for item in numbers{
+    print(item)
+}
+
+for i in 1...100{
+    if i == 5 {
+        break
+    }
+    print("message")
+    
+}
+
+var strValue = "hjgjh"
+var abcd = Int(strValue)
+//abcd!
+if let v = abcd {
+print("v=\(v)")
+}
+
+
+var value:Int?
+var messageStr:String? = "hello world"
+var boolValue:Bool?
+
+value = 33
+message = ""
+boolValue = true
+
+//value=nil
+//messageStr=nil
+//boolValue = nil
+
+//unwrap value using !
+// value!
+
+//unwrap value using if let (its safe)
+if let myVal = value {
+    print(myVal)
+}else{
+   print("its nil")
+}
+
+if let str = messageStr {
+    print(str)
+}
+
+
+func getDataFormNetwork(data:String?, error:String?){
+    
+    if data == nil {
+        if let e = error {
+            print("request failed \(e)")
+
+        }
+    }else{
+        print("data is \(data)")
+    }
+}
+
+
+getDataFormNetwork(data: nil, error: "user name wrong")
+
+
+var noStudents:Int? = nil
+
+
+if let no = noStudents {
+    print(no)
+}
+
+var stuArr = [Student]()
+
+for i in 1...100{
+    stuArr.append(Student(name: "noman", marks: 100))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

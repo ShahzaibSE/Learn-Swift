@@ -1,0 +1,138 @@
+//: Playground - noun: a place where people can play
+
+
+
+var str = "Hello, playground"
+print(str)
+
+
+//func add(a:Int){
+//    print(a)
+//    a=20
+//}
+//
+//
+//add(a: 2)
+
+
+// functoin with return more then on values
+func maXMin(array:[Int])->(min:Int,max:Int){
+    
+    var Min = array[0]
+    var Max = array[0]
+    
+    for item in array[1...array.count-1]{
+        if item > Max{
+         Max=item
+        }else if item < Min {
+            Min = item
+        }
+    }
+
+    let MaxMinValue = (Min,Max)
+    return MaxMinValue
+}
+
+
+let minMaxValue = maXMin(array: [1,2,3,4,5,6])
+minMaxValue.1
+
+
+
+//function with default parameter
+func withDefaultValue(a:Int,increment:Int=10)->Int{
+    let value = a+increment
+    return value
+}
+let myValue = 10
+withDefaultValue(a: myValue)
+
+//function with variadic parameter
+func withVariadicParameter(value:String...){
+    for item in value {
+        item
+    }
+}
+
+withVariadicParameter(value: "ali","noman")
+
+//will be disscuss next class
+//func withRefreceParameter(value:String){
+//    
+//}
+
+//function with datatype
+func addition(a:Int,b:Int)->String{
+    return "\(a+b)"
+}
+
+func multiplication(a:Int,b:Int){
+    print("\(a)\(b)")
+}
+
+var additionFunc:(Int,Int)->String = addition
+additionFunc(2, 2)
+additionFunc(3, 3)
+
+// function with functions in parameters
+func multiplication(a:Int,b:Int)->String{
+    return "\(a*b)"
+}
+
+func divide(a:Int,b:Int)->String{
+    return "\(a/b)"
+
+}
+func withFunctionInParam(anyfunc:(Int,Int)->String, another:(Int,Int)->String)->String{
+    
+    let multi = anyfunc(2, 2)
+    let divide = another(8, 4)
+    
+    return "multiplication=\(multi),divide=\(divide)"
+}
+
+let value = withFunctionInParam(anyfunc: multiplication,another: divide)
+value
+
+//Nested functions
+
+func withNestedFunctions(pram1:Int,param2:Int)->(inc:Int,dec:Int){
+    
+    func increment (i:Int)->Int{
+        return i+10
+    }
+    
+    func decrement (j:Int)->Int{
+        return j-10
+    }
+
+    let incrementValue = increment(i: pram1)
+    let decrementValue = decrement(j: param2)
+    
+
+    return (incrementValue,decrementValue)
+}
+withNestedFunctions(pram1: 10, param2: 50)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

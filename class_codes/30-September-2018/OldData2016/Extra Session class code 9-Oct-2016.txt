@@ -1,0 +1,68 @@
+//: Playground - noun: a place where people can play
+
+
+var str = "Hello, playground"
+
+var name:String = "ali"
+
+var city = "karachi"
+var value = 10
+//var pi = 3.142
+var isRaining = false
+
+var myChar:Character = "@"
+
+
+
+
+let pi = 3.142
+//pi = 4.9
+//error
+
+var r:Double = 10
+var area = pi *  r * r
+
+var friutquantity = 10
+var Message = "I have \(friutquantity) apples"
+
+
+var marks = [Int]()
+marks.append(10)
+marks.append(20)
+marks.append(10)
+
+var sum = 0
+
+//for item in marks {
+//    print(item)
+//    sum+=item
+//}
+
+for (index,value) in marks.enumerated() {
+    
+    print(index)
+//    print(value)
+}
+
+
+for item in 1...99{
+    print(item)
+}
+
+
+var sum1 = 0
+
+while (sum1<=10) {
+    
+    print(sum1)
+    sum1+=1
+}
+
+var fruits = [String:Int]()
+fruits["apple"] = 10
+fruits["oranges"] = 20
+print(fruits)
+
+
+
+

@@ -1,0 +1,169 @@
+//: Playground - noun: a place where people can play
+
+
+var count:Int?
+count = 10
+
+var sum = 20 + count!
+
+if let c = count {
+    print(30+c)
+}else{
+    print("count is nil")
+}
+
+
+var str =  "abc"
+
+if let v = Int(str) {
+    var value = 100 + v
+}else{
+    print("this is not a Int")
+}
+
+
+
+struct Student{
+    var stuName:String
+    var rollNo:String
+}
+
+
+var ali:Student? = Student(stuName: "ali", rollNo: "8989")
+ali = nil
+
+// 3rd way to unwarp deep objects using ?
+if let name  = ali?.stuName {
+    print(name)
+}
+
+var food:String!
+food = nil
+
+var desert:String?
+desert = nil
+
+
+//  var message = "eating" + food
+
+//var drink = "dringking" + desert!
+
+for i in 1...10{
+    
+    for j in 1...10{
+        
+        if j%2 == 0 {
+            print("🌺" , terminator:"")
+        }else{
+            print("☘" ,terminator:"")
+        }
+    }
+    print("")
+}
+
+
+var fruits = [String:Int]()
+fruits["apple"] = 10
+fruits["mango"] = 20
+
+let  fruitCount = fruits["abc"]
+    
+
+var stuMarks = [String:[Int]]()
+
+stuMarks["noman"] = [100,99,56,77]
+stuMarks["waqar"] = [44,66,56,99]
+
+for (stu,marks) in stuMarks{
+    print(stu)
+    print(marks)
+}
+
+var lifeSpan = ["snake":1...100 , "dog":2...56]
+
+// lifeSpan["snake"]
+
+var range:CountableRange = 1..<100
+var closeRange:CountableClosedRange = 1...100
+
+
+
+
+struct vector {
+    var x:Int
+    var y:Int
+}
+func +(v1:vector , v2:vector) ->vector{
+    return vector(x: v1.x+v2.x, y: v1.y+v2.y)
+}
+
+func *(cont:Int , v:vector) ->vector{
+    
+    return vector(x: cont*v.x, y: cont*v.y)
+}
+
+var I = vector(x: 10, y: 20)
+var J = vector(x: 49, y: 77)
+
+var sumOfNo = 2+3
+var sumOfVectors = I + J
+var multiOfVector = 3 * I
+
+// sumOfVectors.x
+// multiOfVector.y
+
+//var sumi = 3 + Int("34")
+//Taks 1
+/*
+ Overload + for optional types and (Int,Float,Double,String)
+*/
+
+
+//Taks 2
+/*
+ Overload  . for dot product of two vector
+ */
+
+//Taks 3
+/*
+ Overload  + for Addition of Two Matrix
+ and * for constant(2) multiplication.
+ like: 2 * M
+ */
+
+func dot (v1:vector , v2:vector)->Int{
+    let dotAns = (v1.x * v2.x) + (v1.y * v2.y)
+    return dotAns
+}
+
+
+
+infix operator ^:MultiplicationPrecedence
+
+// func power(i:Double , j:Double)->Double{
+//     return pow(i, j)
+// }
+
+
+postfix operator  %
+
+postfix func %(value:Double)->Double{
+    return (value/100)
+}
+44%
+
+
+/*
+ 
+Task 4 
+ make prefix operator for (int,float,Double,String)
+*/
+
+
+
+
+
+
+
+
+

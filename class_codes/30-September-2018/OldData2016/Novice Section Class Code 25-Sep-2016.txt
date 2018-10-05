@@ -1,0 +1,76 @@
+//: Playground - noun: a place where people can play
+
+//var str = "Hello, playground hello"
+////var a = 2+3
+
+//function with parameters
+func addition (Number1:Int,Number2:Int){
+    let add:Int = Number1+Number2
+    print(add)
+    print("this is addtion")
+}
+
+addition(Number1: 10, Number2: 20)
+addition(Number1: 1, Number2: 1)
+
+//function with parameters and return type
+func additionWithReturn (a:Int,b:Int)->String{
+    let add:Int = a+b
+    return "\(add)"
+}
+
+var value = additionWithReturn(a: 22, b: 22)
+
+//function with no return and parameters
+func sayHello(){
+    print("Its say hello function")
+}
+sayHello()
+
+
+
+func findMaxNo(array:[Int])->Int{
+    //we suppose max value is first
+    var maxNo = array[0]
+    
+    for item in array[1..<array.count]{
+
+        if item > maxNo {
+            maxNo = item
+        }
+    }
+    
+    return maxNo
+}
+
+let arr:[Int] = [4,51,2,5,73,56,77]
+let maxValue = findMaxNo(array: arr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

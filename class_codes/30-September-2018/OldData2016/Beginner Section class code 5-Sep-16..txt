@@ -1,0 +1,148 @@
+print("Hello world!")
+
+var sum  = 2+1
+var result = true || true
+print(result)
+if sum < 3 {
+    print("its 3")
+}else{
+    print("its not 3")
+}
+
+var number:Array<Int> = []
+var anotherArray:Array<String> = ["a","b","c"]
+
+var oddnmbers = [Int]()
+var evenNumbers:[Float] = [1.1,2.3,4.5]
+
+var cities = ["karachi" , "lahore" , "Multan"]
+var fruits:[String] = [String]()
+var myValues:[Double] = []
+
+
+var myArr = [1,2,34,5]
+var secArr = [3,4,5,6]
+
+var sumOfArr = myArr + secArr
+sumOfArr += [9,8,7]
+
+let constantsArr = ["a","b"]
+let  constantsSum = constantsArr + ["c","d"]
+
+
+var names:[String] = ["ali","ali","noman","usman",""]
+
+var first = names.first
+var last = names.last
+
+var isExist = names.isEmpty
+
+// var index = names.indexOf("2")
+// var index = names.index(of:"ali")
+names.append("nasrullah")
+var contains = names.contains("nasrullah")
+
+
+var count = names
+
+var myIndex = names.index(of:"noman")!
+names.remove(at:myIndex)
+
+// names.insertAtIndex("kashif" , 2)
+// names.removeAll()
+// names[0...100] = ["a","b"]
+// print(names)
+
+
+// for item in 1..<10 {
+//     print(item)
+// }
+
+// for (i,name) in names.enumerated() {
+
+//     print("\(i) \(name)")
+// }
+
+// for i in names.indices {
+//     print(i)
+// }
+
+var value = 10
+
+while (value < 15) {
+    value+=1
+    print(value)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
