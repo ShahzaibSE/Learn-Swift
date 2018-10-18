@@ -235,12 +235,142 @@ var square_area = square.area()
 print("Area: \(square_area)")
 //print(self)
 
-// Structure - In progress
+// Enumeration Recursion.
+
+enum familyTree {
+    case noKnownParent
+    indirect case oneKnownParent (name: String, ancestors: familyTree)
+}
+
+// Structure
 struct Student {
     var name: String
     var age: Int
     
-    func createBio(name: String, age: Int) -> Dictionary<String, String>{
-        return ["name":name, "age":String(age)]
+    mutating func createBio(name: String, age: Int) -> Dictionary<String, String>{
+        self.name = name
+        self.age = age
+        return ["name":self.name, "age":String(self.age)]
+    }
+    
+    func getData(query: Dictionary<String, String>) {
+        if (query["firstname"] != "") {
+            // Run your query.
+        } else {
+            
+        }
     }
 }
+
+// Types in Swift.
+var val = Int8(2)
+//val = 234 // error: integer literal '234' overflows when stored into 'Int8'
+//val = Int8(234)  // Not enough bits to represent a signed value.
+print("Positive Integers")
+print(Int8.max)
+print(Int16.max)
+print(Int32.max)
+print(Int64.max)
+print(Int.max)
+
+// Functions Optional parameters.
+func createCustomer(firstname: String, middlename: String = "chaudry", lastname: String, age: Int) -> Dictionary<String,String> {
+    print("First Name: \(firstname)")
+    print("Middlename: \(middlename)")
+    print("Lastname: \(lastname)")
+    
+//    guard let Middlename = middlane else {
+//        return ["error" : "No middlename"]
+//    }
+    
+    return ["firstname":firstname, "middlename":middlename, "lastname":lastname]
+}
+
+func greetGuest() -> String? {
+    return "Shahzaib"
+}
+
+// Inout parameters
+func add(num1:inout Int, num2: Int) {
+    var _num1 = num1 + 1
+    print("Added: \(_num1 + num2)")
+}
+
+var customer: Dictionary<String, String> = ["firstname":"Shahzaib"]
+
+// Array and Sets.
+var twoDarray = [[Int]]()
+
+// Set
+var fruits = Set<String>(["apple", "banana", "pineapple", "pemagronate"])
+var fruitsArr = ["apple", "banana", "pineapple", "pemagronate"]
+fruitsArr.insert("mango", at: 4)
+print("Check fruit: \(fruitsArr.contains("mango"))")
+var fruitSetfromArray = Set<String>(fruitsArr)
+print("Fruits from array")
+print(fruitSetfromArray)
+
+// Optional unwrapping.
+var optionalVal: Int! = 23
+if let optionalval = optionalVal, optionalval > 24 {
+    print("Optional value: \(optionalval)")
+}
+
+var sampleval: Int = 10
+if sampleval > 10, sampleval % 2 == 0 {
+    print("Value is even and greater than 10")
+}
+
+if sampleval >= 10 && sampleval % 2 == 0 {
+    print("test2:- Value is even and greater than 10")
+}
+
+func variadiaParams(_ customers: String...,funcType: String,_ age: Int = 20,from city: String) {
+    print("Function type: \(funcType), Customers: \(customers) of age \(age) are from \(city)")
+}
+
+variadiaParams("Shahzaib", "Alex", "John", funcType: "get", from: "Jeddah")
+variadiaParams("Shahzaib", "Alex", "John", funcType: "get", 24,from: "Jeddah")
+
+//for i in stride(from: 10, to: 1, by: -1) {
+for i in stride(from: 10, through: 1, by: -1) {
+    print(i)
+}
+
+for i in 1...20 {
+    print(i)
+}
+
+// Optional Binding.
+//var OptionalVal: Int! = 20
+//var FetchedValue: String = ""
+//
+//if FetchedValue = optionalVal {
+//    print("Fetched Value: \(FetchedValue)")
+//}
+
+// Inputs data for students.
+var Firstname: String!
+var Middlename: String!
+var Lastname: String! = "Noor"
+var city: String? = "Jeddah"
+var errorMessage: String?
+
+if let fstname = Firstname {
+    print("First Name: \(fstname)")
+} else {
+    errorMessage?.append("Please enter firstname")    // Optional Chaining.
+}
+print(errorMessage)
+
+var num: Int = 0
+num+=1
+print(num)
+
+var valnum: Int  // Valid Declaration
+var valNum2: Int = 1
+var valNum3 = 2
+var valNum4 = 3
+
+let resultVal4 = valNum4 + 1
+print(resultVal4)
