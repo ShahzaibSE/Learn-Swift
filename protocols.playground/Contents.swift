@@ -157,13 +157,21 @@ print(arr1_copy.removeAll(keepingCapacity: true))
 
 // -------- //
 print("Student Record List")
-struct Student {
+struct Student: Comparable {    
     var id: Int
     var firstname: String
     var middlename: String!
     var lastname: String
     var age: Int
     var country: String
+    
+    static func < (lhs: Student, rhs: Student) -> Bool {
+        if lhs.id < rhs.id{
+            return true
+        }else{
+            return false
+        }
+    }
 }
 
 var student1 = Student(id:1,firstname:"Shahzaib",middlename:nil,lastname:"Noor",age:23,country:"Pakistan")
@@ -188,6 +196,13 @@ var sorted_students = students.sorted { (lhs: Student, rhs: Student) -> Bool in
     }
 }
 //print(students)
-for student in sorted_students {
+//for student in sorted_students {
+//    print(student)
+//}
+
+var students2 = students.sorted()
+for student in students2 {
     print(student)
 }
+
+
