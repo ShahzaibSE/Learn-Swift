@@ -21,7 +21,10 @@ class ViewController: UIViewController {
     
     @IBAction func sendMessage(_ sender: UIButton) {
         print("Message sent")
+        let alertController = UIAlertController()
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default,handler: nil))
+        self.present(alertController, animated:true)
     }
-    
+        
 }
 
