@@ -15,11 +15,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var taskTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // ----------- //
         print("List view loaded")
         getData()
         taskTable.dataSource = self
         taskTable.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
+        // Use the edit button item provided by the table view controller.
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Use the edit button item provided by the table view controller.
+        navigationItem.leftBarButtonItem = editButtonItem
+        taskTable.reloadData()
     }
 
     @IBAction func addView(_ sender: Any) {
@@ -46,4 +55,24 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         tasksArray.append("Task #3")
 //        taskTable = tasksArray
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            tasksArray.remove(at: indexPath.row)
+            print("Task deleted")
+            taskTable.reloadData()
+        }
+    }
+    
+    
+//    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+//        var task = tasksArray[indexPath.count]
+//        if task != nil || task != "" {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
+    
+    
 }

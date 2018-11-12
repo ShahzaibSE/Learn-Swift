@@ -10,13 +10,27 @@ import UIKit
 
 class addTodoViewController: UIViewController {
 
+    @IBOutlet weak var todoname: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("Add view loaded")
     }
     
-
+    @IBAction func addToDo(_ sender: Any) {
+        if todoname.text! == "" {
+            print("Please enter a to-do")
+            let alertBox = UIAlertController(title: "Please enter a To-do", message: "It is mandatory to enter a To-do", preferredStyle: .alert)
+            alertBox.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+            alertBox.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+            self.present(alertBox, animated: true)
+        } else  {
+            print("Added to-do: \(todoname.text!)")
+            tasksArray.append(todoname.text!)
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

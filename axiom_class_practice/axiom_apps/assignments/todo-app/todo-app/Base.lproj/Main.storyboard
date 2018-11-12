@@ -29,10 +29,10 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="Add">
+                                                        <fragment content="+">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="22" name=".AppleSystemUIFont"/>
+                                                                <color key="NSColor" name="windowFrameTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" size="29" name=".AppleSystemUIFont"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>
@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task Name e.g: Pay Bills" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdt-5w-sqV">
-                                <rect key="frame" x="40" y="360" width="295" height="50"/>
+                                <rect key="frame" x="40" y="403" width="295" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Hed-b0-ezZ"/>
                                 </constraints>
@@ -102,26 +102,55 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TSb-fI-40r">
-                                <rect key="frame" x="67" y="88" width="240" height="208"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_logo" translatesAutoresizingMaskIntoConstraints="NO" id="TSb-fI-40r">
+                                <rect key="frame" x="40" y="67" width="295" height="282"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9qD-DG-dl4">
+                                <rect key="frame" x="40" y="479" width="295" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.52940244822790494" blue="0.20672538218046588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add To-do">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="ChalkboardSE-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="addToDo:" destination="vxC-ZA-CJc" eventType="touchDown" id="euZ-4g-wGn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TSb-fI-40r" firstAttribute="top" secondItem="IvK-3X-cLf" secondAttribute="top" constant="68" id="4xz-zu-FOs"/>
+                            <constraint firstItem="9qD-DG-dl4" firstAttribute="leading" secondItem="IvK-3X-cLf" secondAttribute="leading" constant="40" id="1bm-zm-mSh"/>
+                            <constraint firstItem="TSb-fI-40r" firstAttribute="top" secondItem="IvK-3X-cLf" secondAttribute="top" constant="47" id="4xz-zu-FOs"/>
                             <constraint firstItem="fdt-5w-sqV" firstAttribute="leading" secondItem="IvK-3X-cLf" secondAttribute="leading" constant="40" id="89p-tS-Nqb"/>
-                            <constraint firstItem="TSb-fI-40r" firstAttribute="leading" secondItem="IvK-3X-cLf" secondAttribute="leading" constant="67" id="Ask-Yx-51d"/>
-                            <constraint firstItem="fdt-5w-sqV" firstAttribute="top" secondItem="IvK-3X-cLf" secondAttribute="top" constant="340" id="Clj-9A-uOY"/>
-                            <constraint firstItem="fdt-5w-sqV" firstAttribute="top" secondItem="TSb-fI-40r" secondAttribute="bottom" constant="64" id="OzP-7Z-bEt"/>
+                            <constraint firstItem="9qD-DG-dl4" firstAttribute="width" secondItem="fdt-5w-sqV" secondAttribute="width" id="A2K-DC-b1H"/>
+                            <constraint firstItem="TSb-fI-40r" firstAttribute="leading" secondItem="IvK-3X-cLf" secondAttribute="leading" constant="40" id="Ask-Yx-51d"/>
+                            <constraint firstItem="fdt-5w-sqV" firstAttribute="top" secondItem="IvK-3X-cLf" secondAttribute="top" constant="383" id="Clj-9A-uOY"/>
+                            <constraint firstItem="fdt-5w-sqV" firstAttribute="top" secondItem="TSb-fI-40r" secondAttribute="bottom" constant="54" id="OzP-7Z-bEt"/>
+                            <constraint firstItem="9qD-DG-dl4" firstAttribute="top" secondItem="IvK-3X-cLf" secondAttribute="top" constant="459" id="li2-Xc-mxv"/>
                             <constraint firstItem="IvK-3X-cLf" firstAttribute="trailing" secondItem="fdt-5w-sqV" secondAttribute="trailing" constant="40" id="oeb-Yn-aLp"/>
-                            <constraint firstItem="IvK-3X-cLf" firstAttribute="trailing" secondItem="TSb-fI-40r" secondAttribute="trailing" constant="68" id="sI7-Uv-6o3"/>
+                            <constraint firstItem="9qD-DG-dl4" firstAttribute="trailing" secondItem="IvK-3X-cLf" secondAttribute="trailing" constant="-40" id="pcc-WZ-nBT"/>
+                            <constraint firstItem="IvK-3X-cLf" firstAttribute="trailing" secondItem="TSb-fI-40r" secondAttribute="trailing" constant="40" id="sI7-Uv-6o3"/>
+                            <constraint firstItem="9qD-DG-dl4" firstAttribute="height" secondItem="fdt-5w-sqV" secondAttribute="height" id="x4s-sM-FKC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IvK-3X-cLf"/>
                     </view>
+                    <connections>
+                        <outlet property="todoname" destination="fdt-5w-sqV" id="VTM-79-y85"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbt-gZ-3ZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783.20000000000005" y="-9.4452773613193415"/>
+            <point key="canvasLocation" x="828" y="-12"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add_logo" width="225" height="225"/>
+    </resources>
 </document>

@@ -205,4 +205,73 @@ for student in students2 {
     print(student)
 }
 
+extension String {
+    func assignText() {
+        print("Extending String type assigned!, value: \(self)")
+    }
+    
+    init(val: String) {
+        self = "\(val);"
+    }
+}
 
+var name: String = "Shahzaib"
+print("Name: \(name)")
+name.assignText()
+
+typealias Velocity = Double
+// Extension cannot contain stored properties.
+extension Velocity {
+    var kph : Velocity { return self * 1000 }
+    var mph : Velocity { return self }
+}
+
+var velocity: Velocity = 23.456
+print("Velocity: \(velocity.kph)")
+
+protocol Car {
+    var name: String { get set }
+    var model: Int {get set}
+    
+    func start()
+    func stop() -> Void
+}
+
+struct car: Car {
+    var name: String
+    var model: Int
+    
+    var license_no : Int {
+        get {
+          return model
+        }
+        set(val) {
+            model = val
+        }
+    }
+    
+    func start() {
+        print("Car started")
+    }
+    func stop() {
+        print("Car switched off")
+    }
+}
+
+extension car {
+    func select_hitGear(gearNo: Int) {
+        print("Hit gear: \(gearNo)")
+    }
+}
+
+protocol sizeCases {
+    var small: String {get set}
+    var medium: String {get set}
+    var large: String {get set}
+}
+
+enum Size: sizeCases {
+    case small = "small"
+    case medium = "medium"
+    case large = "large"
+}
