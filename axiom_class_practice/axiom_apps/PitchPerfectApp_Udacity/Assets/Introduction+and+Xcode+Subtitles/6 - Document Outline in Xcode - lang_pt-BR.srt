@@ -1,0 +1,107 @@
+1
+00:00:00,334 --> 00:00:04,234
+O Xcode é um poderoso ambiente
+de desenvolvimento integrado.
+
+2
+00:00:04,267 --> 00:00:08,567
+Ele pode intimidar um pouco
+no início, mas isso é normal.
+
+3
+00:00:08,601 --> 00:00:11,701
+Vou mostrar uma característica
+do construtor de interfaces
+
+4
+00:00:11,734 --> 00:00:14,133
+que vai facilitar
+um pouco a sua vida.
+
+5
+00:00:14,167 --> 00:00:19,434
+Aqui à esquerda está o que seria
+o resumo do documento.
+
+6
+00:00:19,467 --> 00:00:22,000
+Aqui vemos uma versão
+completa do Pitch Perfect
+
+7
+00:00:22,033 --> 00:00:27,067
+para você ver de modo abrangente
+o que esse menu pode fazer.
+
+8
+00:00:27,100 --> 00:00:30,267
+A sua versão do Pitch Perfect
+não terá os elementos de IU
+
+9
+00:00:30,300 --> 00:00:31,801
+por enquanto.
+
+10
+00:00:31,834 --> 00:00:34,834
+Vou arrastar essa barra
+para ter mais espaço.
+
+11
+00:00:34,868 --> 00:00:40,033
+No resumo do documento, temos
+o Record Sounds View Controller.
+
+12
+00:00:40,067 --> 00:00:42,200
+Clicando no triângulo,
+
+13
+00:00:42,234 --> 00:00:44,868
+visualizamos o conteúdo
+correspondente e elementos de IU,
+
+14
+00:00:44,901 --> 00:00:46,701
+como botões e rótulos.
+
+15
+00:00:48,133 --> 00:00:52,767
+Clicando em qualquer item
+do menu, o conteúdo é exibido.
+
+16
+00:00:52,801 --> 00:00:54,767
+Se você procura um modo
+fácil de encontrar
+
+17
+00:00:54,801 --> 00:00:56,334
+e trabalhar
+com os elementos de IU,
+
+18
+00:00:56,367 --> 00:00:58,801
+o resumo do documento
+é o lugar certo para isso.
+
+19
+00:00:58,834 --> 00:01:01,501
+Aqui selecionei
+o botão "Record".
+
+20
+00:01:01,534 --> 00:01:05,367
+Eu também poderia clicar
+na inscrição e seguir adiante.
+
+21
+00:01:05,400 --> 00:01:08,400
+Trabalhar com o resumo pode ser
+extremamente proveitoso
+
+22
+00:01:08,433 --> 00:01:11,767
+quando o seu aplicativo não tiver
+apenas botões e rótulos.
+

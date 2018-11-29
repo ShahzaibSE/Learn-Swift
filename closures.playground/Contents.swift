@@ -98,6 +98,10 @@ doSomething(number: 100) { (numberCube) in
     
 }
 
+doSomething(number: 3){ (numberCube) in
+    print(numberCube)
+}
+
 // Closure can capture values.
 func townPopulation(_ numberOfPeople: Int) -> () -> Int {
     var population: Int = 0

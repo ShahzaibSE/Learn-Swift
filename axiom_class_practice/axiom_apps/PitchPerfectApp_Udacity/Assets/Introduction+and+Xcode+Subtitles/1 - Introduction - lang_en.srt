@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:03,094
+Welcome to iOS development I'm Jerry,
+
+2
+00:00:03,094 --> 00:00:05,219
+content developer here at Udacity.
+
+3
+00:00:05,219 --> 00:00:07,090
+In this course we're going to build an app that lets you
+
+4
+00:00:07,090 --> 00:00:09,950
+record your voice and play it back with sound effects.
+
+5
+00:00:09,950 --> 00:00:14,850
+But first, this course assumes you're familiar with some basic programming concepts.
+
+6
+00:00:14,850 --> 00:00:16,030
+You don't need to have written
+
+7
+00:00:16,030 --> 00:00:19,585
+any iOS apps but you should be comfortable with writing IF statements,
+
+8
+00:00:19,585 --> 00:00:22,020
+loops and classes in Swift.
+
+9
+00:00:22,020 --> 00:00:25,455
+We'll build on that foundation to show you how to write your first app.
+
+10
+00:00:25,455 --> 00:00:28,000
+Let's start by looking at the steps we'll take to build it.
+

@@ -1,0 +1,80 @@
+1
+00:00:00,000 --> 00:00:01,925
+Hey everyone, it's me Jared.
+
+2
+00:00:01,925 --> 00:00:03,340
+And I'd like to show you the App we're going to
+
+3
+00:00:03,340 --> 00:00:05,735
+create in this course called Pitch Perfect.
+
+4
+00:00:05,735 --> 00:00:08,130
+Pitch Perfect allows you to record your voice and
+
+5
+00:00:08,130 --> 00:00:10,225
+play it back with various sound effects,
+
+6
+00:00:10,225 --> 00:00:11,750
+including changes to speed,
+
+7
+00:00:11,750 --> 00:00:14,080
+pitch and even reverb an echo.
+
+8
+00:00:14,080 --> 00:00:17,535
+I'm running it here in the iOS simulator so that I can show you.
+
+9
+00:00:17,535 --> 00:00:20,595
+The first screen simply prompts you to record your voice.
+
+10
+00:00:20,595 --> 00:00:25,410
+Here at Udacity we believe that asking questions is one of the best ways to learn.
+
+11
+00:00:25,670 --> 00:00:30,830
+Judge a man by his questions rather than by his answers.
+
+12
+00:00:31,920 --> 00:00:36,080
+Now, you can see that Pitch Perfect has moved this to the Playback View,
+
+13
+00:00:36,080 --> 00:00:40,820
+we can choose to playback my voice using a variety of different sound effects.
+
+14
+00:00:40,820 --> 00:00:44,995
+Let's try listening to my voice played back really fast.
+
+15
+00:00:44,995 --> 00:00:49,010
+"Judge a man by his questions rather than by his answers."
+
+16
+00:00:49,010 --> 00:00:54,870
+Or we can playback my voice at a really low pitch and I'll sound like Darth Vader.
+
+17
+00:00:55,480 --> 00:01:00,100
+"Judge a man by his questions rather than by his answers."
+
+18
+00:01:00,100 --> 00:01:02,810
+This app is a lot of fun to play with,
+
+19
+00:01:02,810 --> 00:01:05,310
+but more importantly as you build this app you'll learn
+
+20
+00:01:05,310 --> 00:01:08,950
+key iOS development concepts along the way.
+

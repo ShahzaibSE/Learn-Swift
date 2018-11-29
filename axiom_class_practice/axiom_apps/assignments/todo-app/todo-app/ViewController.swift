@@ -64,6 +64,20 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let index = taskTable.indexPathForSelectedRow {
+            let indexPath = index.row
+            let addViewController = segue.destination as! addTodoViewController
+            addViewController.taskIndex = (indexPath as! (Int))
+            addViewController.editOption = true
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Row selected: \(indexPath)")
+        self.performSegue(withIdentifier: "ToAdd",sender: ["index":indexPath, "option": "edit"])
+    }
+    
     
 //    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
 //        var task = tasksArray[indexPath.count]

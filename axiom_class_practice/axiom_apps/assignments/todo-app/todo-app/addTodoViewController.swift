@@ -8,13 +8,28 @@
 
 import UIKit
 
-class addTodoViewController: UIViewController {
+protocol editProtocol {
+    var option: Dictionary<String,String>{get set}
+}
 
+class addTodoViewController: UIViewController {
+    
+    var taskIndex:Int!
+    var editOption: Bool!
+
+    @IBOutlet weak var add_edit_button: UIButton!
     @IBOutlet weak var todoname: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("Add view loaded")
+        print("Task Index: \(taskIndex)")
+        print("Edition option: \(editOption)")
+        
+        if let is_edit = editOption, is_edit == true {
+            print("Edit button")
+            add_edit_button.setTitle("Edit your to-do", for: .normal)
+        }
     }
     
     @IBAction func addToDo(_ sender: Any) {
@@ -24,7 +39,11 @@ class addTodoViewController: UIViewController {
             alertBox.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
             alertBox.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
             self.present(alertBox, animated: true)
-        } else  {
+        } else if let index = taskIndex,let isedit = editOption {
+            tasksArray[index] = todoname.text!
+            self.dismiss(animated: true, completion: nil)
+        }
+        else  {
             print("Added to-do: \(todoname.text!)")
             tasksArray.append(todoname.text!)
             self.dismiss(animated: true, completion: nil)

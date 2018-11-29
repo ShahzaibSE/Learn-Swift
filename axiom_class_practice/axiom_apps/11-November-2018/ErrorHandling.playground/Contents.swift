@@ -45,11 +45,11 @@ class VendingMachine{
 func getItemFromMachine()throws{
     let machine = VendingMachine()
     try machine.getItem(name: "Cold Drink")
-    
 }
 
 do{
     try getItemFromMachine()
+    
     print("")
 }catch VendingMachineError.outofStock{
     print("item is out of stok")

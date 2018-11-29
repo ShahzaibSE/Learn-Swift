@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:03,415
+In this class, we'll build an app called Pitch Perfect,
+
+2
+00:00:03,415 --> 00:00:07,600
+which lets you record your voice and play it back with changes to pitch.
+
+3
+00:00:07,600 --> 00:00:09,430
+To do this, we'll explore and get comfortable with
+
+4
+00:00:09,430 --> 00:00:11,800
+Xcode, Apple's development environment.
+
+5
+00:00:11,800 --> 00:00:14,110
+You can use Xcode to create apps for any of
+
+6
+00:00:14,110 --> 00:00:17,140
+Apple's platforms from the Watch to Apple TV to iOS,
+
+7
+00:00:17,140 --> 00:00:18,710
+and even the Mac.
+
+8
+00:00:18,710 --> 00:00:20,590
+This lesson, Introduction and Xcode,
+
+9
+00:00:20,590 --> 00:00:22,705
+is about getting comfortable with Xcode.
+
+10
+00:00:22,705 --> 00:00:24,335
+In Audio Layouts and Buttons,
+
+11
+00:00:24,335 --> 00:00:28,125
+we'll set up the initial screen of the app for the user to record their own voice.
+
+12
+00:00:28,125 --> 00:00:29,965
+We'll learn how to lay out the user interface,
+
+13
+00:00:29,965 --> 00:00:33,370
+how to connect UI elements such as our buttons to code.
+
+14
+00:00:33,370 --> 00:00:35,355
+In ViewController and Multiple Views,
+
+15
+00:00:35,355 --> 00:00:37,840
+we're going to step it up a notch by adding a second screen
+
+16
+00:00:37,840 --> 00:00:40,900
+to the app where the user can apply audio effects.
+
+17
+00:00:40,900 --> 00:00:42,490
+Next, in Delegation and Recording,
+
+18
+00:00:42,490 --> 00:00:46,816
+we'll explore how to pass the recorded audio from the first screen to the second.
+
+19
+00:00:46,816 --> 00:00:48,370
+Then in Playback and Audio Effects,
+
+20
+00:00:48,370 --> 00:00:52,360
+we'll add the functionality for adding various alterations to the pitch.
+
+21
+00:00:52,360 --> 00:00:53,560
+As you progress through course,
+
+22
+00:00:53,560 --> 00:00:56,380
+you'll be practicing fundamental iOS concepts that you can
+
+23
+00:00:56,380 --> 00:01:00,000
+apply for any app that you build. Let's get started.
+

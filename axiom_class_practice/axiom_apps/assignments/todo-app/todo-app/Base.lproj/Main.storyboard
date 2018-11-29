@@ -142,12 +142,13 @@
                         <viewLayoutGuide key="safeArea" id="IvK-3X-cLf"/>
                     </view>
                     <connections>
+                        <outlet property="add_edit_button" destination="9qD-DG-dl4" id="0ip-hx-hUK"/>
                         <outlet property="todoname" destination="fdt-5w-sqV" id="VTM-79-y85"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbt-gZ-3ZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="-12"/>
+            <point key="canvasLocation" x="826" y="-36"/>
         </scene>
     </scenes>
     <resources>

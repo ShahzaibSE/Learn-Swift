@@ -1,0 +1,140 @@
+1
+00:00:00,000 --> 00:00:03,085
+Before we move into writing the code for Pitch Perfect,
+
+2
+00:00:03,085 --> 00:00:05,290
+I want to cover a software design principle that you will
+
+3
+00:00:05,290 --> 00:00:08,465
+find very useful in every iOS app that you write.
+
+4
+00:00:08,465 --> 00:00:12,860
+Let me introduce the Model View Controller pattern called MVC for short.
+
+5
+00:00:12,860 --> 00:00:16,150
+MVC helps us to organize our code by separating
+
+6
+00:00:16,150 --> 00:00:20,100
+different parts of the application logic into distinct files.
+
+7
+00:00:20,100 --> 00:00:22,840
+You can think of any app as having three parts,
+
+8
+00:00:22,840 --> 00:00:25,240
+the view, which presents graphics, text,
+
+9
+00:00:25,240 --> 00:00:28,000
+and interactive elements to the user, the model,
+
+10
+00:00:28,000 --> 00:00:29,470
+which stores the apps data,
+
+11
+00:00:29,470 --> 00:00:32,620
+and the controller which connects the view and the model.
+
+12
+00:00:32,620 --> 00:00:34,980
+Now let's look at what this means for us.
+
+13
+00:00:34,980 --> 00:00:37,120
+You've seen Pitch Perfect's user interface.
+
+14
+00:00:37,120 --> 00:00:41,155
+It has two screens with buttons the user can tap. That's the view.
+
+15
+00:00:41,155 --> 00:00:46,195
+The model will hold the audio file that is produced when the user records their voice.
+
+16
+00:00:46,195 --> 00:00:49,300
+And finally, there's the logic for playing the audio with effects.
+
+17
+00:00:49,300 --> 00:00:52,030
+This connecting code lives in the controller.
+
+18
+00:00:52,030 --> 00:00:55,825
+You might be tempted to have the view and model talk directly to each other,
+
+19
+00:00:55,825 --> 00:00:58,180
+but to keep our code really clean the view and
+
+20
+00:00:58,180 --> 00:01:01,115
+model should know as little about each other as possible.
+
+21
+00:01:01,115 --> 00:01:02,740
+They'll tell the controller what they need,
+
+22
+00:01:02,740 --> 00:01:05,630
+and the controller will relay messages between them.
+
+23
+00:01:05,630 --> 00:01:07,855
+For example, when the user presses a button,
+
+24
+00:01:07,855 --> 00:01:12,240
+the view passes the user's intent along to the controller for processing.
+
+25
+00:01:12,240 --> 00:01:13,990
+And the controller, in turn,
+
+26
+00:01:13,990 --> 00:01:15,880
+will talk to the model, if needed.
+
+27
+00:01:15,880 --> 00:01:18,190
+Similarly, when the model changes,
+
+28
+00:01:18,190 --> 00:01:19,915
+it notifies the controller,
+
+29
+00:01:19,915 --> 00:01:22,342
+which can then update the view, if needed.
+
+30
+00:01:22,342 --> 00:01:26,110
+Having a division of responsibility or separation of concerns between
+
+31
+00:01:26,110 --> 00:01:30,430
+the code that handles different kinds of tasks makes it much easier to write,
+
+32
+00:01:30,430 --> 00:01:32,230
+maintain, and reuse your code.
+
+33
+00:01:32,230 --> 00:01:35,230
+Students have found it really handy to have this pattern in the back of
+
+34
+00:01:35,230 --> 00:01:39,565
+their minds as they start building Pitch Perfect where you'll get to see the model,
+
+35
+00:01:39,565 --> 00:01:43,000
+view, and controller and how they work together. So let's get to it.
+

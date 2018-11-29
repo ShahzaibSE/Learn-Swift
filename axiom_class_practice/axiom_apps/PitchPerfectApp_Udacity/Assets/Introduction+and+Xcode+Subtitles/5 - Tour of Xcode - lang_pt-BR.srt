@@ -1,0 +1,379 @@
+1
+00:00:00,367 --> 00:00:04,934
+Aqui está o Xcode,
+agora aberto no Pitch Perfect.
+
+2
+00:00:04,968 --> 00:00:07,334
+Vou falar sobre etapas
+básicas no Xcode
+
+3
+00:00:07,367 --> 00:00:10,234
+e me aprofundar no código
+daqui a pouco.
+
+4
+00:00:10,701 --> 00:00:13,033
+À esquerda, você vê
+o painel de navegação,
+
+5
+00:00:13,067 --> 00:00:15,901
+começando com o navegador
+do projeto.
+
+6
+00:00:15,934 --> 00:00:17,634
+No meio fica a área
+do conteúdo,
+
+7
+00:00:17,667 --> 00:00:21,834
+que exibe agora as configurações
+do trabalho no Pitch Perfect.
+
+8
+00:00:21,868 --> 00:00:25,934
+À direita, a área de trabalho
+com os painéis dos inspetores.
+
+9
+00:00:25,967 --> 00:00:28,634
+O inspetor de documento
+é o que está aberto agora.
+
+10
+00:00:28,667 --> 00:00:32,167
+Abaixo você vê a barra
+de depuração e o console.
+
+11
+00:00:32,200 --> 00:00:35,467
+Ao contrário de outros editores
+que você possa ter usado,
+
+12
+00:00:35,501 --> 00:00:37,567
+com o Xcode, basta um clique
+
+13
+00:00:37,601 --> 00:00:40,400
+para selecionar um arquivo
+ou outro item.
+
+14
+00:00:40,434 --> 00:00:42,501
+Começando com o navegador
+à esquerda,
+
+15
+00:00:42,534 --> 00:00:44,501
+há várias maneiras
+de visualizar os arquivos
+
+16
+00:00:44,534 --> 00:00:46,767
+e outras etapas do projeto.
+
+17
+00:00:47,033 --> 00:00:50,767
+Há ainda mais formas de navegar
+usando apenas o teclado.
+
+18
+00:00:52,234 --> 00:00:56,567
+Como exemplo, você pode usar
+a tecla command + 0
+
+19
+00:00:56,601 --> 00:00:59,534
+para ativar ou desativar
+o painel de navegação.
+
+20
+00:00:59,567 --> 00:01:02,067
+Se você for como eu,
+vai achar isso útil
+
+21
+00:01:02,100 --> 00:01:04,167
+quando precisar
+de mais espaço na tela.
+
+22
+00:01:04,200 --> 00:01:06,467
+À direita,
+no painel do inspetor,
+
+23
+00:01:06,500 --> 00:01:09,667
+o número de inspetores
+disponíveis - no momento dois -
+
+24
+00:01:09,701 --> 00:01:13,801
+depende do conteúdo
+ou item selecionados.
+
+25
+00:01:13,834 --> 00:01:16,367
+Nas configurações do projeto,
+vemos o arquivo
+
+26
+00:01:16,400 --> 00:01:18,968
+e os inspetores de ajuda.
+
+27
+00:01:19,000 --> 00:01:22,400
+Conforme avançar no aplicativo,
+você vai usar outros inspetores.
+
+28
+00:01:22,434 --> 00:01:26,100
+Como o painel de navegação,
+você pode ativar os inspetores.
+
+29
+00:01:26,133 --> 00:01:29,234
+Você pode usar esse botão
+no alto, à direita,
+
+30
+00:01:29,767 --> 00:01:33,067
+ou o menu para exibir
+ou não as opções,
+
+31
+00:01:33,100 --> 00:01:35,133
+também chamadas
+de inspetores.
+
+32
+00:01:36,334 --> 00:01:41,267
+Ou você pode usar as teclas
+de atalho alt+command+0.
+
+33
+00:01:41,300 --> 00:01:44,100
+Na Udacity, costumamos dizer
+que conteúdo é essencial,
+
+34
+00:01:44,133 --> 00:01:47,133
+e isso se aplica ao Xcode.
+
+35
+00:01:47,968 --> 00:01:50,434
+A qualquer momento
+em que o código
+
+36
+00:01:50,467 --> 00:01:53,300
+ou os storyboards da interface
+forem selecionados,
+
+37
+00:01:53,334 --> 00:01:56,334
+estarão sempre no centro
+e bem à vista.
+
+38
+00:01:57,534 --> 00:01:59,400
+Como falei, na parte
+inferior da tela
+
+39
+00:01:59,434 --> 00:02:02,234
+estão a barra de depuração
+e o console.
+
+40
+00:02:04,534 --> 00:02:08,634
+No console, à direita,
+estava a mensagem "Hello, world".
+
+41
+00:02:09,767 --> 00:02:12,200
+No Xcode,
+o editor de conteúdo
+
+42
+00:02:12,234 --> 00:02:15,734
+é onde você vai passar muito tempo
+como desenvolvedor de iOS.
+
+43
+00:02:15,767 --> 00:02:18,000
+Ele ajuda na edição
+de qualquer etapa do projeto,
+
+44
+00:02:18,033 --> 00:02:19,934
+desde as configurações
+até o código,
+
+45
+00:02:19,968 --> 00:02:22,167
+ou aos elementos
+da interface do usuário.
+
+46
+00:02:22,200 --> 00:02:24,734
+Saber que ele é sensível
+ao conteúdo pode ajudar muito
+
+47
+00:02:24,767 --> 00:02:28,801
+quando você quiser alterar
+uma configuração no Xcode.
+
+48
+00:02:28,834 --> 00:02:30,767
+Ao selecionar o projeto
+do Pitch Perfect,
+
+49
+00:02:30,801 --> 00:02:34,667
+que é o pequeno ícone azul aqui
+em cima, no menu do projeto,
+
+50
+00:02:34,701 --> 00:02:37,834
+vemos as configurações
+para todo o projeto.
+
+51
+00:02:38,167 --> 00:02:42,300
+Vemos a versão do iOS à qual
+o aplicativo está direcionado.
+
+52
+00:02:42,334 --> 00:02:46,067
+O arquivo de interface principal
+leva o nome adequado "Main",
+
+53
+00:02:46,100 --> 00:02:51,300
+que vem de Main.storyboard.
+É esse arquivo que vemos aqui.
+
+54
+00:02:51,801 --> 00:02:53,534
+Podemos usar
+as configurações do projeto
+
+55
+00:02:53,567 --> 00:02:57,601
+para decidir quais orientações
+vamos manter e ativar.
+
+56
+00:02:57,634 --> 00:03:00,234
+Veja que aqui mantivemos
+a orientação Retrato,
+
+57
+00:03:00,267 --> 00:03:04,133
+como também Paisagem
+à esquerda e à direita.
+
+58
+00:03:04,634 --> 00:03:06,934
+Selecionando o arquivo
+AppDelegate.swift,
+
+59
+00:03:06,968 --> 00:03:09,634
+você vai ver que o editor
+de conteúdo do Xcode muda
+
+60
+00:03:09,667 --> 00:03:13,234
+para que possamos
+alterar o código do Swift.
+
+61
+00:03:13,267 --> 00:03:16,334
+Você vai notar que o Xcode
+automaticamente
+
+62
+00:03:16,367 --> 00:03:18,501
+destaca os componentes
+específicos
+
+63
+00:03:18,534 --> 00:03:20,968
+para facilitar a leitura
+do código.
+
+64
+00:03:21,901 --> 00:03:24,267
+Certas pré-configurações,
+como fontes,
+
+65
+00:03:24,300 --> 00:03:26,601
+estão realçadas
+com a cor roxa,
+
+66
+00:03:26,901 --> 00:03:32,067
+e palavras-chave estão
+realçadas com essa cor rosada.
+
+67
+00:03:32,100 --> 00:03:36,934
+Vamos dar mais uma olhada
+no arquivo sobre o qual falamos.
+
+68
+00:03:36,968 --> 00:03:39,200
+Ao selecioná-lo,
+o editor do Xcode se altera
+
+69
+00:03:39,234 --> 00:03:42,701
+para exibir a interface
+para esse aplicativo.
+
+70
+00:03:42,734 --> 00:03:46,033
+Em Storyboard, você pode
+rolar a tela e ajustar o zoom
+
+71
+00:03:46,067 --> 00:03:50,033
+para ver e modificar interfaces
+do usuário em seu aplicativo.
+
+72
+00:03:53,934 --> 00:03:57,273
+Clique no botão direito
+para regular o nível de zoom.
+
+73
+00:04:00,567 --> 00:04:03,667
+É aqui que vamos configurar
+os elementos de IU do aplicativo.
+
+74
+00:04:03,701 --> 00:04:05,100
+Sei que parece complicado,
+
+75
+00:04:05,133 --> 00:04:07,400
+mas vamos orientar
+você passo a passo
+
+76
+00:04:07,434 --> 00:04:09,667
+e falar sobre todas
+as etapas essenciais do Xcode
+
+77
+00:04:09,701 --> 00:04:11,501
+até o final do curso.
+
